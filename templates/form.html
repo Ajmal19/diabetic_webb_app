@@ -1,0 +1,140 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Diabetes Predictor</title>
+</head>
+
+<body>
+
+
+    <div class="hidden sm:block" aria-hidden="true">
+        <div class="py-5">
+            <div class="border-t border-gray-200"></div>
+        </div>
+    </div>
+
+    <div class="mt-10 sm:mt-0">
+        <div class="md:grid md:grid-cols-3 md:gap-6">
+            <div class="md:col-span-1">
+                <div class="px-4 sm:px-0">
+                    <h3 class="text-lg font-medium leading-6 text-gray-900">Personal Information</h3>
+                    <p class="mt-1 text-sm text-gray-600">
+                        Kinndly Provide us the following Information
+                    </p>
+                </div>
+            </div>
+            <div class="mt-5 md:mt-0 md:col-span-2">
+                <form action="/output" method="GET">
+                    <div class="shadow overflow-hidden sm:rounded-md">
+                        <div class="px-4 py-5 bg-white sm:p-6">
+                            <div class="grid grid-cols-6 gap-6">
+
+
+
+                                <hr>
+
+                                <div class="col-span-6 sm:col-span-4">
+                                    <label for="preg" class="block text-sm font-medium text-gray-700">Number of
+                                        times pregnant</label>
+                                    <input name="preg" id="preg"
+                                        class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                </div>
+                                <hr>
+                                <br>
+
+                                <div class="col-span-6 sm:col-span-4">
+                                    <label for="glucose" class="block text-sm font-medium text-gray-700">Plasma
+                                        glucose concentration a 2 hours in an oral glucose tolerance test</label>
+                                    <input name="glucose" id="glucose"
+                                        class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                </div>
+                                <hr>
+                                <br>
+
+                                <div class="col-span-6 sm:col-span-4">
+                                    <label for="bp" class="block text-sm font-medium text-gray-700">Diastolic
+                                        blood pressure (mm Hg)</label>
+                                    <input name="bp" id="bp"
+                                        class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                </div>
+                                <hr>
+                                <br>
+
+                                <div class="col-span-6 sm:col-span-4">
+                                    <label for="tricep" class="block text-sm font-medium text-gray-700">Triceps
+                                        skin fold thickness (mm)</label>
+                                    <input name="tricep" id="tricep"
+                                        class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                </div>
+                                <hr>
+                                <br>
+
+                                <div class="col-span-6 sm:col-span-4">
+                                    <label for="insulin" class="block text-sm font-medium text-gray-700">2-Hour
+                                        serum insulin (mu U/ml)</label>
+                                    <input name="insulin" id="insulin"
+                                        class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                </div>
+                                <hr>
+                                <br>
+
+                                <div class="col-span-6 sm:col-span-4">
+                                    <label for="bmi" class="block text-sm font-medium text-gray-700">Body mass
+                                        index (weight in kg/(height in m)^2)</label>
+                                    <input name="bmi" id="bmi"
+                                        class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                </div>
+                                <hr>
+                                <br>
+
+                                <div class="col-span-6 sm:col-span-4">
+                                    <label for="dpf" class="block text-sm font-medium text-gray-700">Diabetes
+                                        pedigree function</label>
+                                    <input name="dpf" id="dpf"
+                                        class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                </div>
+                                <hr>
+                                <br>
+
+                                <div class="col-span-6 sm:col-span-4">
+                                    <label for="age" class="block text-sm font-medium text-gray-700">Age
+                                        (years)</label>
+                                    <input name="age" id="age"
+                                        class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                </div>
+                                <br>
+
+
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                            <button type="submit"
+                                class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden sm:block" aria-hidden="true">
+        <div class="py-5">
+            <div class="border-t border-gray-200"></div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
